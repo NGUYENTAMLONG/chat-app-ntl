@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;800&display=swap");
+body {
+  -wekit-font-smoothing: antialiased;
+  font-family: "Muli", sans-serif;
+}
+
+.comment__box {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.comment__box .comment h6 {
+  font-weight: 800;
+}
+.card-time {
+  padding-left: 15px;
+}
+p {
+  font-size: 16px;
+}
+.comment {
+  animation: something 0.6s ease forwards;
+}
+.likes {
+  margin-left: 15px;
+}
+.likes .fa-thumbs-up {
+  cursor: pointer;
+}
+@keyframes something {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.blink-dots {
+  width: 30px; /* 1ch is equivalent to width of "0" */
+  font-size: 1rem;
+  font-family: monospace; /* all characters have the same width and therefore the width of "0" */
+  overflow: hidden;
+  animation: typing 2s steps(4) infinite;
+}
