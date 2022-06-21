@@ -3,9 +3,7 @@ function dbConnect() {
   const url = "";
 
   mongoose
-    .connect(
-      `mongodb+srv://User1:WmzCpim0QMwV8Ea8@cluster0.czfye.mongodb.net/?retryWrites=true&w=majority`
-    )
+    .connect(process.env.MONGO_URL)
     .then(() => {
       console.log("Connected to DB !!!");
     })
