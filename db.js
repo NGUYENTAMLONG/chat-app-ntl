@@ -1,6 +1,7 @@
 function dbConnect() {
   const mongoose = require("mongoose");
-  const url = "";
+  const url =
+    "mongodb+srv://User1:WmzCpim0QMwV8Ea8@cluster0.czfye.mongodb.net/?retryWrites=true&w=majority";
 
   mongoose
     .connect(process.env.MONGO_URL)
